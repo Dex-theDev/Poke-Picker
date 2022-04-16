@@ -22,12 +22,12 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${choice}`)
           }
        data.abilities.forEach(obj => {
         const li = document.createElement('li')
-           li.innerHTML = obj.ability.name
+           li.innerHTML = obj.ability.name.charAt(0).toUpperCase() + obj.ability.name.slice(1)
            list.appendChild(li)
          
            console.log(obj.ability.name)
        })
-        stats.innerHTML =`Weight: ${data.weight}`
+        document.querySelector('.weightPlace').innerHTML = data.weight
         const typeListParent = document.querySelector('.type')
         while (typeListParent.hasChildNodes()){
             typeListParent.removeChild(typeListParent.firstChild)
@@ -36,7 +36,7 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${choice}`)
            const typeList = document.createElement('li')
            
            
-           typeList.textContent = obj.type.name
+           typeList.textContent = obj.type.name.charAt(0).toUpperCase() + obj.type.name.slice(1)
            typeListParent.appendChild(typeList)
           
        })

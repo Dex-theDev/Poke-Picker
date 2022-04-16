@@ -4,9 +4,23 @@ body {
 }
 h6 {
     font-size: 2rem;
+    font-family: 'Rubik Moonrocks', cursive;
 }
 .container {
     display: flex;
     margin: 0 auto;
     width: 75%;
+}
+ul {
+    text-align: left;
+    list-style-type: circle;
+}
+li, .weightPlace {
+    font-size: 1.25rem;
+    font-family: 'Sarpanch', sans-serif;
+}
+.abilities, .pokeType, .weight {
+    font-size: 1.7rem;
+    text-decoration: underline;
+    font-family: 'Sarpanch', sans-serif;
 }
