@@ -19,12 +19,13 @@ h1,h4 {
     font-family: 'Rubik Moonrocks', cursive;
 }
 .container {
-    display: flex;
-    margin: 0 auto 0 20%;
+    
+    margin: 0 auto;
     width: 50%;
-    border: solid 5px black;
+   display: flex;
     border-radius: 1rem;
-    background-color: #E0A1BC;
+    
+    
 }
 ul {
     text-align: left;
@@ -38,7 +39,28 @@ li, .weightPlace {
     font-size: 1.7rem;
     text-decoration: underline;
     font-family: 'Sarpanch', sans-serif;
+    margin: 0 auto;
 }
 #pokeImage {
-    width: 65%;
+    width: 50%;
+    margin-top: 3em;
+    position:relative;
+    top: 33%;
+    
+}
+.pokePic {
+    width: 50%;
+}
+.pokeDex {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    position: absolute;
+
+}
+.statBox {
+    position: relative;
+    width: 25%;
+    top: 100px;
+    right: 0;
 }
